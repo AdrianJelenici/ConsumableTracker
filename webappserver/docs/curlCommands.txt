@@ -1,0 +1,22 @@
+Windows - Intellij Command Prompt:
+
+curl -i -H "Content-Type: application/json" -X GET localhost:8080/ping
+
+curl -i -H "Content-Type: application/json" -X GET localhost:8080/listAll
+
+curl -i -H "Content-Type: application/json" -X GET localhost:8080/listExpired
+
+curl -i -H "Content-Type: application/json" -X GET localhost:8080/listNonExpired
+
+curl -i -H "Content-Type: application/json" -X GET localhost:8080/listExpiringIn7Days
+
+curl -i -H "Content-Type: application/json" -X GET localhost:8080/exit
+
+curl -i -H "Content-Type: application/json" -X POST -d "{\"type\": \"1\", \"name\": \"apple\", \"notes\": \"none\", \"price\": \"5\", \"size\": \"5\", \"expiryDate\": \"2021-12-15T00:00:00\"}" localhost:8080/addFood
+
+curl -i -H "Content-Type: application/json" -X POST -d "{\"type\": \"1\", \"name\": \"apple\", \"notes\": \"none\", \"price\": \"5\", \"size\": \"5\", \"expiryDate\": \"2021-12-15T00:00:00\"}" localhost:8080/removeFood
+
+curl -i -H "Content-Type: application/json" -X POST -d "{\"type\": \"2\", \"name\": \"water\", \"notes\": \"none\", \"price\": \"5\", \"size\": \"5\", \"expiryDate\": \"2021-12-15T00:00:00\"}" localhost:8080/addDrink
+
+curl -i -H "Content-Type: application/json" -X POST -d "{\"type\": \"2\", \"name\": \"water\", \"notes\": \"none\", \"price\": \"5\", \"size\": \"5\", \"expiryDate\": \"2021-12-15T00:00:00\"}" localhost:8080/removeDrink
+

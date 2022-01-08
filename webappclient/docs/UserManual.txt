@@ -1,0 +1,39 @@
+Opening the Application:
+-> Click on run
+-> The Main GUI window will appear, populated with data from the last run
+
+The Main GUI Window:
+-> There are four tabs that the user can switch between by clicking on them
+-> The tabs either display all items, expired items, non expired items, or items expiring in 7 days
+-> Each tab has a JScrollPane (which holds panels and labels) to display this information
+-> At the bottom of the screen there are two buttons: add and remove
+-> Clicking on add will display a custom dialog window for adding a new consumable
+-> Clicking on remove will display a custom dialog window for removing a consumable 
+
+Add Dialog Window:
+-> Six fields are displayed, five of which are mandatory for creating a new consumable
+-> The first field is a combobox for selecting the consumable type
+---> Depending on which type is selected, the 'size' field will also change
+-> The second field is a textfield for the name of the consumable item
+-> The third field is a textfield for the notes of the conusmable item (the only optional field)
+-> The fourth field is a textfield for the price of the consumable (only accepts numbers)
+-> The fifth field is a textfield for the size of the consumable (only accepts numbers)
+-> The sixth field is a datepicker for the expiry date of the consumable
+-> At the bottom of the dialog window there are two buttons: add and cancel
+-> If the user clicks add when a mandatory field has not been answered, it will display a warning message
+-> If the user clicks add when all mandatory fields have been answered, the dialog window will close and the item will be added
+-> If the user clicks cancel, the dialog window will close with nothing being added. 
+
+Remove Dialog Window:
+-> A textfield is displayed for the item number the user wishes to remove (only accepts numbers)
+-> At the buttom of the dialog window are two buttons: remove and cancel
+-> If the user clicks remove when the textfield has not been answered, a warning message will appear
+-> If the user clicks remove when the textfield has been given an item number that does exist, a warning message will appear
+-> If the user clicks remove when they have inputted a valid item number, the dialog window will close and the item will be removed
+-> If the user clicks cancel, the dialog window will close with nothing being removed
+
+Closing the Main GUI Window:
+-> Pressing the x-button at the top of the screen wil display a message
+-> The message will ask the user if they are sure they want to close the application
+-> If user clicks yes, then the application will close and the data will be saved
+-> If user clicks no, then the applcation will not close
